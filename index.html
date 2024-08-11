@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <title>Les Palmiers</title>
+    <style>
+        body {
+            padding: auto;
+            margin: auto;
+            background-color: #fdf9f3;
+        }
+        
+        .hero {
+            background-image: linear-gradient(to right, rgba(26,23,24,0.4), rgba(26,23,24,0.8)), url("images/background.jpg");
+            background-size: cover;
+            height: 640px;
+        }
+
+        .name-container {
+            display: flex;
+            color: #fdf9f3;
+            flex-direction: column;
+            padding: 20px 10px 240px 10px;
+            height: 320px;
+            align-items: center;
+        }
+
+        .name-container-top {
+            display: flex;
+            color: #fdf9f3;
+            flex-direction: row;
+            align-items: center;
+            vertical-align: bottom;
+        }
+
+        .item1 {
+            /* border: red solid 1px; */
+            font-family: "Roboto", sans-serif;
+            font-style: normal;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: medium; 
+            text-align: right;
+            padding: 20px 50px 10px 10px;
+        }
+
+        .item2 {
+            /* border: red solid 1px; */
+            text-align: center;
+            font-family: "Playfair Display", serif;
+            font-optical-sizing: auto;
+            font-weight: 600;
+            font-style: normal;
+            text-transform: capitalize;
+            font-size: 140px;
+            font-weight: bolder;
+            padding: 10px;                                         
+        }
+
+        .item3 {
+            /* border: red solid 1px; */
+            text-align: left;
+            font-family: "Roboto", sans-serif;
+            font-style: normal;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: medium;
+            padding: 20px 10px 10px 50px;
+        }
+
+        .item4 {
+            /* border: red solid 2px; */
+            vertical-align: top;
+            text-align: center;
+            font-family: "Playfair Display", serif;
+            font-optical-sizing: auto;
+            font-weight: 600;
+            font-style: normal;
+            text-transform: capitalize;
+            font-size: 140px;
+            font-weight: bolder;    
+            padding-top: 0;
+            margin-top: 0;  
+            box-sizing: border-box;                   
+        }
+
+        .item5 {
+            margin-top: 60px;
+        }
+
+        .menu {
+            display: flex;
+            color: #fdf9f3;
+            font-family: "Roboto Mono", monospace;
+            font-optical-sizing: auto;
+            font-weight: 100;
+            font-style: normal;
+            text-transform: uppercase;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        .button-link {
+            background-color: transparent;
+            color: #fdf9f3;
+            font-weight: 200;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-color: #fdf9f3;
+            border-width: 1px;
+            border-style: solid;
+            border-radius: 12px;
+        }
+
+        .description {
+            margin: 0;
+
+        }
+        .green {
+            /* background-color: transparent; */
+            color: #778959;
+            /* font-weight: 200; */
+            padding-top: 15px;
+            padding-bottom: 15px;
+            /* text-align: center;
+            text-decoration: none;
+            display: inline-block; */
+            /* margin: 4px 2px;
+            cursor: pointer; */
+            border-color: #778959;
+            /* border-width: 1px;
+            border-style: solid;
+            border-radius: 12px; */
+        }
+
+        .button-style {
+            font-family: "Roboto Mono", monospace;
+            font-optical-sizing: auto;
+            font-weight: 100;
+            text-transform: uppercase;
+            text-align: center;
+            width: 420px;
+            padding-top: 10px;
+        }
+
+        .image-button {
+            display: flex;
+            flex-flow: column nowrap;
+            width: 420px;
+        }
+
+        .link {
+            text-decoration: none;
+            color: #fdf9f3;
+            padding: 20px;
+        }
+        .description {
+            font-family: "Playfair Display", serif;
+            font-optical-sizing: auto;
+            font-weight: 200;
+            font-style: normal;
+            font-size: 60px;
+            padding: 30px;
+            background-color: #fdf9f3;
+            color: #778959;
+            margin-top: -1;
+        }
+        .services-header {
+            font-family: "Roboto", sans-serif;
+            font-style: normal;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: medium; 
+            text-align: right;
+            background-color: #fdf9f3;
+            color: #778959;
+            text-align: center;
+            margin: 5px auto;
+        }
+
+        .green-separator {
+            margin: 0 -20px;
+            border: none;
+            height: 1px;
+            /* Set the hr color */
+            color: #778959; /* old IE */
+            background-color: #778959;  /* Modern Browsers */
+        }
+        
+        .green-separator {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .services-container {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-content: space-evenly;
+            gap: 60px;
+            padding-top: 40px;
+            padding-bottom: 40px;
+            background-color: #fdf9f3;
+        }
+
+        .image-style {
+            border-width: 1px;
+            border-style: solid;
+            border-radius: 12px;
+            border-color: #778959;
+        }
+
+        .mycontainer {
+                display: flex;
+            }
+
+        .mycontainer > div {
+                width: 50%;
+                color: #fdf9f3;
+        }
+        .about {
+            background-color: black;
+        }
+
+        #menu-separator {
+            margin: 0 -20px;
+            border: none;
+            height: 0.6px;
+            /* Set the hr color */
+            color: #fdf9f3; /* old IE */
+            background-color: #fdf9f3;  /* Modern Browsers */
+        }
+
+        #intro {
+            font-family: "Playfair Display", serif;
+            font-optical-sizing: auto;
+            font-weight: 200;
+            font-size: 30px;
+            font-style: normal;
+            padding: 20px 40px;
+            color: #ffffff;
+        }
+
+        #about-us {
+            font-family: "Roboto", sans-serif;
+            font-style: normal;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: medium; 
+            padding: 20px 40px 0px 40px;
+            color: #ffffff;
+            padding-top: 28%;
+        }
+
+        #text {
+            font-family: "Roboto Mono", monospace;
+            font-optical-sizing: auto;
+            font-size: 12px;
+            font-weight: 200;
+            padding: 0px 40px;
+            color: #ffffff;
+        }
+
+        #founder-image {
+            width: 50%;
+            height: 100%;
+        }
+
+        #photo-width {
+            width: 340px;
+        }
+
+        #styling-width {
+            width: 340px;
+        }
+
+        #direction-width {
+            width: 340px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <div class="menu">
+            <div class="link"><a class="link" href="#">About</a></div>
+            <div class="link"><a class="link" href="#">Services</a></div>
+            <div class="link"><a class="link" href="#">Portfolio</a></div>
+            <div class="link"><a class="link" href="#">Work with me</a></div>
+        </div>
+        <hr id="menu-separator">
+        <div class="name-container">
+            <div class="name-container-top">
+                <div class="item1">creative</div>
+                <div class="item2">Les</div>
+                <div class="item3">studio</div>
+            </div>
+                <div class="item4">Palmiers</div>
+                <div class="item5 button-style">
+                    <a href="#" class="button-link">work with us</a>
+                </div>
+        </div>
+    </div>
+    <div class="description">
+            We are a full service <em>creative studio</em> specializing in photography,
+            product styling, and creative direction.
+    </div>
+    <hr class="green-separator">
+        <div class="services-header">
+            Our Services  
+        </div>
+    <hr class="green-separator">
+    <div class="services-container">
+        <div class="services-container-item">
+            <div class="image-button">
+                <img src="./images/style-scandi.jpg" alt="image" class="image-style">
+                <div class="button-style">
+                    <a href="#" class="button-link green" id="styling-width">Styling and Consulting</a>
+                </div>
+            </div>
+        </div>
+        <div class="services-container-item">
+            <div class="image-button">
+                <img src="./images/photography-scandi.jpg" alt="image" class="image-style">
+                <div class="button-style">
+                    <a href="#" class="button-link green" id="photo-width">Photography</a>
+                </div>
+            </div>
+        </div>
+        <div class="services-container-item">
+            <div class="image-button">
+                <img src="./images/direction-scandi.jpg" alt="image" class="image-style">
+                <div class="button-style">
+                    <a href="#" class="button-link green" id="direction-width">Creative Direction</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mycontainer">
+        <div style="background-color:antiquewhite">
+            <img src="./images/founder.jpg" style="width: 100%; height: 100%;" alt="founder">
+        </div>    
+        <div class="about">
+          <div id="about-us">About Us</div>
+            <div id="intro">
+                Get to know <br>
+                our <em>founder</em>.
+            </div>
+            <div id="text">
+                Meet Layla, our founder, creative director, and the brains behind Les Palmiers.
+                Since 2007, Layla has been visionary behind all our products.
+            </div>
+        </div>      
+      </div>
+</body>
+</html>
